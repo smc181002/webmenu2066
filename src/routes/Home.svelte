@@ -1,3 +1,7 @@
+<script>
+  import ApiCgi from "../components/ApiCgi.svelte";
+</script>
+
 <style>
   :global(body) {
     padding: 0;
@@ -27,4 +31,6 @@
 
     <p>Create and control applications fron a single web portal</p>
   </div>
+
+  <ApiCgi />
 </main>

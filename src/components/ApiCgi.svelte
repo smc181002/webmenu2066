@@ -1,28 +1,16 @@
 <script>
-  async function codeOutput() {
-    const res = await fetch(`tutorial/random-number`);
-    const text = await res.text();
+  const callFunc = async () => {
+    let res = await fetch("http://192.168.0.102/cgi-bin/cmd.py?q=hellothere");
+    return res.text();
+  };
 
-    if (res.ok) {
-      return text;
-    } else {
-      throw new Error(text);
-    }
-  }
-
-  let promise = codeOutput();
-
-  function handleClick() {
-    promise = codeOutput();
-  }
+  let res = callFunc();
 </script>
 
-<button on:click={handleClick} />
-
-{#await promise}
+{#await res}
   <p>...waiting</p>
-{:then number}
-  <p>The number is {number}</p>
+{:then value}
+  <p>The number is {value}</p>
 {:catch error}
   <p style="color: red">{error.message}</p>
 {/await}
