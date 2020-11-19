@@ -32,5 +32,5 @@
     <p>Create and control applications fron a single web portal</p>
   </div>
 
-  <CmdOut cmdInfo={{ cmd: 'ps' }} />
+  <!-- <CmdOut cmdInfo={{ cmd: 'ls' }} /> -->
 </main>
