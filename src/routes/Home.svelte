@@ -1,4 +1,5 @@
 <script>
+  import CmdOut from "../components/CmdOut.svelte";
 </script>
 
 <style>
@@ -17,6 +18,7 @@
   }
 
   .heading-part {
+    text-align: center;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -27,7 +29,8 @@
 <main>
   <div class="heading-part">
     <h1>Welcome to Web Menu</h1>
-
     <p>Create and control applications fron a single web portal</p>
   </div>
+
+  <CmdOut cmdInfo={{ cmd: 'ps' }} />
 </main>
