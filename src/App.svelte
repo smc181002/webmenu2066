@@ -1,30 +1,19 @@
 <script>
-	export let name;
+	import Router from "svelte-spa-router";
+	import routes from "./routes";
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+<Router {routes} />
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+	@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Work+Sans:wght@400;600;700&display=swap');
+
+	:global(div, p) {
+		font-family: 'DM Sans', sans-serif;
+		margin: 8px 0;
 	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+	:global(h1, h2, h3, h4, h5, h6) {
+		font-family: 'Work Sans', sans-serif;
 	}
 </style>
