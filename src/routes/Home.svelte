@@ -1,5 +1,4 @@
 <script>
-  import ApiCgi from "../components/ApiCgi.svelte";
 </script>
 
 <style>
@@ -31,6 +30,4 @@
 
     <p>Create and control applications fron a single web portal</p>
   </div>
-
-  <ApiCgi />
 </main>
