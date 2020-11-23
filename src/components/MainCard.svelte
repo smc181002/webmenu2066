@@ -5,6 +5,7 @@
   export let title;
   export let image;
   export let altImg;
+  export let toPath;
 </script>
 
 <style>
@@ -17,12 +18,14 @@
     position: relative;
     color: #fff;
     box-shadow: 0 25px 30px -14px rgb(0, 0, 0, 0.2);
+    font-weight: 500;
     border-radius: 5px;
     transition: 0.3s ease-in-out;
   }
 
   .main-card:hover {
     background-color: #73a0ff;
+    color: #111a2e;
     box-shadow: 0 25px 30px -8px rgb(0, 0, 0, 0.3);
   }
 
@@ -35,7 +38,7 @@
     position: absolute;
     font-weight: 900;
     top: 20px;
-    right: -9rem;
+    right: -8.6rem;
     color: rgb(0, 0, 0, 0.15);
   }
 
@@ -51,11 +54,12 @@
   }
 </style>
 
-<a href="/ping" use:link>
+<a href={toPath} use:link>
   <div class="main-card">
     <div class="back-text">{backText}</div>
     <div class="content">
       <img src={image} alt={altImg} />
+      <div class="test" />
       <div class="title">{title}</div>
     </div>
   </div>

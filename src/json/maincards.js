@@ -1,33 +1,47 @@
+let url = "https://raw.githubusercontent.com/smc181002/media_files/master/icons/"
+
 let cards = [
   {
     title: "Docker Operations",
-    image: "https://img.icons8.com/color/48/000000/docker.png",
+    image: `${url}docker/docker-icon.svg`,
     altImg: "Docker",
     backText: "Containers",
+    toPath: "/ping",
   },
   {
     title: "AWS Operations",
-    image: "https://img.icons8.com/color/48/000000/docker.png",
+    image: `${url}aws.svg`,
     altImg: "AWS",
     backText: "Cloud Comp",
+    toPath: "/ping",
   },
   {
     title: "Hadoop Operations",
-    image: "https://img.icons8.com/color/48/000000/docker.png",
+    image: `${url}hadoop/logos_hadoop.svg`,
     altImg: "Hadoop",
     backText: "Map Reduce",
+    toPath: "/ping",
   },
   {
     title: "LVM partitions",
-    image: "https://img.icons8.com/color/48/000000/docker.png",
-    altImg: "Hadoop",
+    image: `${url}lvm.svg`,
+    altImg: "partitions",
     backText: "Partitions",
+    toPath: "/ping",
   },
   {
     title: "YUM repo config",
-    image: "https://img.icons8.com/color/48/000000/docker.png",
-    altImg: "Hadoop",
+    image: `${url}yum.svg`,
+    altImg: "redhat",
     backText: "Repository",
+    toPath: "/ping",
+  },
+  {
+    title: "Apache Httpd server",
+    image: `${url}apache_httpd.svg`,
+    altImg: "apache",
+    backText: "Web Server",
+    toPath: "/ping",
   },
 ];
 
