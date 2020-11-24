@@ -1,3 +1,5 @@
+let url = "https://raw.githubusercontent.com/smc181002/media_files/master/icons/";
+
 let subopts = {
   docker: {
     cards: [
@@ -5,7 +7,7 @@ let subopts = {
         title: "Create Container",
         image: `${url}docker/docker-icon.svg`,
         altImg: "Docker",
-        backText: "Create Container",
+        backText: "Create Contin",
         toPath: "/docker/container",
       },
       {
@@ -15,8 +17,29 @@ let subopts = {
         backText: "Create Volume",
         toPath: "/docker/volume",
       },
+      {
+        title: "Create Network",
+        image: `${url}docker/docker-icon.svg`,
+        altImg: "Docker",
+        backText: "Create Network",
+        toPath: "/docker/network",
+      },
+      {
+        title: "Pull Image",
+        image: `${url}docker/docker-icon.svg`,
+        altImg: "Docker",
+        backText: "Pull Image",
+        toPath: "/docker/imagepull",
+      },
+      {
+        title: "Resource Status",
+        image: `${url}docker/docker-icon.svg`,
+        altImg: "Docker",
+        backText: "Resource s",
+        toPath: "/docker/resourcestat",
+      },
     ],
-    pageOpt: {
+    pageOut: {
       isMainPage: false,
       head: "Docker Operations",
     }

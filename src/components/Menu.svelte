@@ -1,7 +1,11 @@
 <script>
   import MainCard from "./MainCard.svelte";
   export let cards;
-  export let pageOut;
+  export let pageOut = {
+    isMainPage: true,
+    head: "Welcome to Web Menu",
+    subHead: "Create and control applications fron a single web portal",
+  };
 </script>
 
 <style>
@@ -31,8 +35,8 @@
 
   .side-title {
     top: 10%;
-    left: 30%;
-    transform: translate(-50%, -50%);
+    left: 14.5rem;
+    transform: translateY(-50%);
     position: absolute;
   }
 

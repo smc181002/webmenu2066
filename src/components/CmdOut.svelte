@@ -17,23 +17,16 @@
 </script>
 
 <style>
-  main {
-    position: absolute;
-    padding: 20px;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30%;
-  }
   main div {
-    background-color: rgb(250, 250, 250);
-    border: 1px solid rgb(224, 224, 224);
+    overflow: auto;
+    background-color: #00000033;
     box-sizing: content-box;
     font-size: 14px;
     font-family: "Cascadia Code", monospace;
     display: flex;
     justify-content: center;
     border-radius: 10px;
+    margin: 40px;
   }
 </style>
 
@@ -43,13 +36,9 @@
     {#await promise}
       <p>running command</p>
     {:then data}
-      {#if data === undefined}
+      {#if data !== undefined}
         <pre>
-          <code>run the command</code>
-        </pre>
-      {:else}
-        <pre>
-          <code>{data}</code>
+          {data}
         </pre>
       {/if}
     {:catch error}

@@ -6,7 +6,7 @@ let cards = [
     image: `${url}docker/docker-icon.svg`,
     altImg: "Docker",
     backText: "Containers",
-    toPath: "/ping",
+    toPath: "/docker",
   },
   {
     title: "AWS Operations",
