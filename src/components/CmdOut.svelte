@@ -28,6 +28,23 @@
     border-radius: 10px;
     margin: 40px;
   }
+  button {
+    margin: 25px 0;
+    margin-left: 100px;
+    background-color: #73a0ff;
+    color: #111a2e;
+    outline: none;
+    border: 0;
+    padding: 14px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "DM Sans", sans-serif;
+    transition: 0.25s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #5580db;
+  }
 </style>
 
 <main>

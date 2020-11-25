@@ -17,17 +17,35 @@
   const url = `http://${ipAddr}/cgi-bin/${type.tech}.py`;
 </script>
 
-<h1>{capitalize(type.tech)}</h1>
-<form>
-  {#each formData as { title, name }, i}
-    <div>
-      <label for={name}>{title}</label>
-      <input type="text" id={name} bind:value={$user[name]} />
-    </div>
-  {/each}
-</form>
+<style>
+  main {
+    padding: 0 100px;
+  }
+
+  input {
+    background-color: #00000022;
+    border: none;
+    color: #ffffffee;
+    outline: none;
+    padding: 14px 8px;
+    width: 16em;
+  }
+
+  label {
+    margin-bottom: 8px;
+  }
+</style>
 
 <main>
-  <CmdOut {url} {cmdInfo} />
+  <h1>{capitalize(type.tech)}</h1>
+  <form>
+    {#each formData as { title, name }, i}
+      <div>
+        <label for={name}>{title}</label>
+        <input type="text" id={name} bind:value={$user[name]} />
+      </div>
+    {/each}
+  </form>
 </main>
-<!-- <p>{JSON.stringify($user)}</p> -->
+
+<CmdOut {url} {cmdInfo} />
